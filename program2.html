@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Online Book Store</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; color: #24312b; background: #f4f5f0; }
+        header { text-align: center; padding: 28px 16px; background: #fffefa; }
+        header h1 { margin: 8px 0; color: #315c4b; letter-spacing: 3px; }
+        nav { margin-top: 18px; }
+        nav a { color: #315c4b; text-decoration: none; margin: 0 8px; font-weight: bold; }
+        section { padding: 22px 16px; text-align: center; }
+        .hero { background: linear-gradient(135deg, #dce9dc, #f8f4e9); padding: 42px 16px; }
+        .book-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+        .book { width: 190px; padding: 18px; background: white; border: 1px solid #d8dfd7; border-radius: 8px; }
+        .cover { height: 110px; display: grid; place-items: center; margin-bottom: 12px; background: #e8eee8; color: #315c4b; font-size: 34px; font-weight: bold; }
+        table { border-collapse: collapse; margin: 16px auto; background: white; max-width: 95%; }
+        th, td { border: 1px solid #cbd4cb; padding: 10px 14px; text-align: left; }
+        th { background: #315c4b; color: white; }
+        button, input[type="submit"] { padding: 9px 14px; border: 0; border-radius: 4px; color: white; background: #315c4b; cursor: pointer; }
+        footer { padding: 20px; text-align: center; background: #e5ece4; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 38px;" aria-hidden="true">📚</div>
+        <h1>BOOKNEST</h1>
+        <p><b>Your Home for Every Book</b></p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#books">Books</a> |
+            <a href="#categories">Categories</a> |
+            <a href="#offers">Offers</a> |
+            <a href="program3.html">Login</a> |
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h2>Discover Your Next Favourite Book</h2>
+            <p>Explore Programming, AI, Data Science, Business, Fiction and Self-Improvement.</p>
+            <form action="#books" method="get">
+                <input type="search" placeholder="Search books..." aria-label="Search books">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <section id="books">
+            <h2>Featured Books</h2>
+            <div class="book-grid">
+                <article class="book"><div class="cover">PY</div><h3>Python Crash Course</h3><p>Price: ₹699</p><button type="button">Buy</button></article>
+                <article class="book"><div class="cover">CC</div><h3>Clean Code</h3><p>Price: ₹799</p><button type="button">Buy</button></article>
+                <article class="book"><div class="cover">AH</div><h3>Atomic Habits</h3><p>Price: ₹599</p><button type="button">Buy</button></article>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Book Categories</h2>
+            <table>
+                <tr><th>Category</th><th>Description</th></tr>
+                <tr><td>Programming</td><td>Python, Java, C++, JavaScript and more.</td></tr>
+                <tr><td>Artificial Intelligence</td><td>AI, Machine Learning and Deep Learning.</td></tr>
+                <tr><td>Data Science</td><td>Data analysis and visualisation.</td></tr>
+                <tr><td>Business &amp; Self-Help</td><td>Finance, marketing and habit building.</td></tr>
+            </table>
+        </section>
+
+        <section id="offers">
+            <h2>Best Sellers &amp; Offers</h2>
+            <p><b>Featured author:</b> James Clear — author of <i>Atomic Habits</i>.</p>
+            <h3>Flat 30% OFF on Programming Books</h3>
+            <p>Why choose BookNest? A useful collection, affordable prices and easy navigation.</p>
+        </section>
+
+        <section>
+            <h2>Customer Reviews</h2>
+            <p><i>“Amazing collection of books!”</i> — Rahul Sharma</p>
+            <p><i>“Best place for programming books.”</i> — Priya Verma</p>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+                <input type="submit" value="Subscribe">
+            </form>
+            <h2>Contact Details</h2>
+            <p>Email: support@booknest.com | Phone: +91 98765 43210</p>
+            <p>Address: Noida, Uttar Pradesh, India</p>
+        </section>
+    </main>
+
+    <footer id="about">
+        <h2>About BookNest</h2>
+        <p>BookNest is a sample online store for exploring technical and non-technical books.</p>
+        <p>© 2026 BookNest | Educational Purpose</p>
+    </footer>
+</body>
+</html>

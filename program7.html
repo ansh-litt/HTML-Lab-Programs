@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Request | BookNest</title>
+    <style>
+        :root { color-scheme: light; font-family: Georgia, "Times New Roman", serif; color: #24312b; background: #f4f3ed; }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; background: linear-gradient(135deg, #f4f3ed 0%, #e8eee8 100%); }
+        header { padding: 24px 7vw; border-bottom: 1px solid #d5ddd5; background: #fffefa; }
+        header a { color: #315c4b; font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; }
+        main { width: min(100% - 32px, 680px); margin: 56px auto; }
+        h1 { margin: 0 0 10px; font-size: clamp(32px, 6vw, 48px); font-weight: 500; }
+        .intro { margin: 0 0 30px; color: #5d6a62; font: 16px/1.6 Arial, sans-serif; }
+        form { display: grid; gap: 20px; padding: 28px; border: 1px solid #d8dfd7; border-top: 4px solid #47735f; background: #fffefa; box-shadow: 0 14px 34px rgb(36 49 43 / 8%); }
+        .field { display: grid; gap: 8px; font: 700 14px Arial, sans-serif; }
+        input, textarea { width: 100%; padding: 12px 13px; border: 1px solid #bdc9bf; border-radius: 3px; background: #fff; color: #24312b; font: 16px Arial, sans-serif; }
+        input:focus, textarea:focus { border-color: #47735f; outline: 2px solid #47735f33; }
+        textarea { min-height: 100px; resize: vertical; }
+        button { justify-self: start; padding: 13px 22px; border: 0; border-radius: 3px; background: #315c4b; color: white; cursor: pointer; font: 700 15px Arial, sans-serif; }
+        button:hover { background: #244738; }
+        @media (max-width: 520px) { main { margin: 36px auto; } form { padding: 22px 18px; } }
+    </style>
+</head>
+<body>
+    <header><a href="program2.html">BOOKNEST</a></header>
+    <main>
+        <h1>Customer Request</h1>
+        <p class="intro">Send us a question about an order, a book, or your BookNest account.</p>
+        <form>
+            <label class="field" for="email">Email ID
+                <input id="email" name="email" type="email" autocomplete="email" required>
+            </label>
+            <label class="field" for="phone">Contact Number
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </label>
+            <label class="field" for="address">Address
+                <textarea id="address" name="address" autocomplete="street-address" required></textarea>
+            </label>
+            <label class="field" for="request">Your Request
+                <textarea id="request" name="request" required></textarea>
+            </label>
+            <button type="submit">Send Request</button>
+        </form>
+    </main>
+</body>
+</html>
